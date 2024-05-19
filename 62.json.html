@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json tutorial</title>
+</head>
+<body>
+    
+</body>
+<div class="con">
+    <script>
+        //json:- object connvert to string and used to 
+        let jsonObj = {
+            name:"aarvi",
+            language:"nodejs",
+            friend:"smile",
+            food:"pizza"
+        }
+        console.log(jsonObj)
+        let myjsonStr = JSON.stringify(jsonObj) // convert to the  object
+        console.log(myjsonStr)
+
+
+       myjsonStr = myjsonStr.replace('aarvi','patel')
+        console.log(myjsonStr)
+
+        newjsonObj = JSON.parse(myjsonStr)// convert to string 
+        console.log(newjsonObj)
+    </script>
+</div>
+</html>
